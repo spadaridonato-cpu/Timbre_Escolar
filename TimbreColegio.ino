@@ -89,7 +89,7 @@ void loop(){
  horario_2();
 
 
- digitalWrite(ledTimbre, HIGH);    
+ digitalWrite(ledTimbre, LOW);    
  delay(500);                       
  lcd.setCursor(9,0);      
  lcd.print("        ");
@@ -114,7 +114,7 @@ if (digitalRead(botonMinutosPin) == LOW) {
 
 // activa el LED (timbre)
 void activar_timbre(){
-    digitalWrite(ledTimbre, LOW);
+    digitalWrite(ledTimbre, HIGH);
     lcd.setCursor(0,0);
     lcd.print("Timbre ON  ");
     Serial.println("Timbre Activo");
